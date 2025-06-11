@@ -22,4 +22,4 @@ jobs:
 
       - name: Run the crawler
         run: |
-          python main.py
+          python main_api.py
