@@ -111,5 +111,5 @@ async def async_worker(url, tags, languages, callback_url, key):
 
 if __name__ == '__main__':
     import uvicorn
-
-    uvicorn.run(app, host="0.0.0.0", port=8040)
+    port = int(os.environ.get("PORT", 8040))
+    uvicorn.run(app, host="0.0.0.0", port=port)
